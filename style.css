@@ -1,14 +1,13 @@
 .box {
     background: blue;
     width: 200px;
-    height: 200px;
-    display: inline-block;
+    /* height: 200px; */
 }
 
-.box:nth-child(2) {
-    margin-left: 20px;
-}
 
-.box:nth-child(3) {
-    margin-left: 20px;
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    height: 800px;
 }
