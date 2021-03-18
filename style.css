@@ -4,6 +4,9 @@
     height: 200px;
     color: white;
     font-size: 100px;
+
+    display:flex;
+    justify-content: center;
 }
 
 
@@ -15,13 +18,6 @@
     /* Cross Axis*/
     align-items: flex-start;
     height: 500px;
-}
-
-.box:nth-child(2) {
-    align-self: center;
-    order:1;
-}
-
-.box:nth-child(3) {
-    align-self: flex-end;
+    flex-wrap: wrap-reverse;
+    align-content: space-around;
 }
