@@ -1,13 +1,27 @@
 .box {
     background: blue;
     width: 200px;
-    /* height: 200px; */
+    height: 200px;
+    color: white;
+    font-size: 100px;
 }
 
 
 .wrapper {
     display: flex;
+    flex-direction: row;
+    /* Main Axis*/
     justify-content: space-around;
-    align-items: stretch;
-    height: 800px;
+    /* Cross Axis*/
+    align-items: flex-start;
+    height: 500px;
+}
+
+.box:nth-child(2) {
+    align-self: center;
+    order:1;
+}
+
+.box:nth-child(3) {
+    align-self: flex-end;
 }
