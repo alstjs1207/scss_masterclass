@@ -1,27 +1,38 @@
-.box {
-    background: blue;
-    flex-basis: 300px;
-    height: 200px;
-    color: white;
-    font-size: 100px;
+/* .box {
+  background: blue;
+  flex-basis: 300px;
+  height: 200px;
+  color: white;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+} */
 
-    display:flex;
-    justify-content: center;
+/* .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  height: 500px;
+  flex-wrap: nowrap;
+} */
+
+/* .box:nth-child(2) {
+  background: #000;
+  flex-shrink: 3;
+} */
+.father {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-
-.wrapper {
-    display: flex;
-    flex-direction: row;
-    /* Main Axis*/
-    justify-content: center;
-    /* Cross Axis*/
-    align-items: flex-start;
-    height: 500px;
-    flex-wrap: nowrap;
-}
-
-.box:nth-child(2) {
-    background: #000;
-    flex-shrink: 3;
+.child {
+  flex-basis: 33%;
+  background: peru;
+  color: white;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
