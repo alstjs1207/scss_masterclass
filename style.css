@@ -21,10 +21,11 @@
   background: #000;
   flex-shrink: 3;
 } */
+
 .father {
   display: grid;
-  grid-template-columns: 250px 250px 250px; /* columns */
-  grid-template-rows: 250px 250px 250px; /* rows */
+  grid-template-columns: 250px 250px 250px 250px; /* columns */
+  grid-template-rows: 250px 250px 250px 250px; /* rows */
   column-gap: 10px; /* column간의 공간 */
   row-gap: 10px; /* row간의 공간 */
   /* gap: 10px;  column, row 간의 공간 */
@@ -38,4 +39,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px; /* columns */
+  grid-template-rows: 250px 250px 250px 250px; /* rows */
+}
+
+.header {
+  background-color: yellow;
+}
+.content {
+  background-color: teal;
+}
+.nav {
+  background-color: violet;
+}
+.footer {
+  background-color: tomato;
 }
