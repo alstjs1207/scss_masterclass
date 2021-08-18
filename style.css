@@ -22,9 +22,12 @@
   flex-shrink: 3;
 } */
 .father {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 250px 250px 250px; /* columns */
+  grid-template-rows: 250px 250px 250px; /* rows */
+  column-gap: 10px; /* column간의 공간 */
+  row-gap: 10px; /* row간의 공간 */
+  /* gap: 10px;  column, row 간의 공간 */
 }
 
 .child {
