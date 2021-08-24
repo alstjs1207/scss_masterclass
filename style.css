@@ -1,69 +1,28 @@
-/* .box {
-  background: blue;
-  flex-basis: 300px;
-  height: 200px;
-  color: white;
-  font-size: 100px;
-  display: flex;
-  justify-content: center;
-} */
-
-/* .wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  height: 500px;
-  flex-wrap: nowrap;
-} */
-
-/* .box:nth-child(2) {
-  background: #000;
-  flex-shrink: 3;
-} */
-
-.father {
-  display: grid;
-  grid-template-columns: 250px 250px 250px 250px; /* columns */
-  grid-template-rows: 250px 250px 250px 250px; /* rows */
-  column-gap: 10px; /* column간의 공간 */
-  row-gap: 10px; /* row간의 공간 */
-  /* gap: 10px;  column, row 간의 공간 */
-}
-
-.child {
-  flex-basis: 33%;
-  background: peru;
-  color: white;
-  font-size: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .grid {
-  display: grid;
+  display: grid; /* gird는 높이가 없다 */
   gap: 10px;
-  /* grid-template-columns: 250px 250px 250px 250px; columns */
-  grid-template-columns: repeat(4, 100px);
-  /* grid-template-rows: 250px 250px 250px 250px; rows */
-  grid-template-rows: repeat(4, 100px); /* rows */
+  height: 50vh;
+  grid-template:
+    /* fraction 사용 가능한 공간 */
+    [header-start] "header header header header" 1fr [header-end] /* 높이를 1fr로 설정 */
+    [content-start] "content content content nav" 2fr [content-end]
+    [footer-start] "footer footer footer footer" 1fr [footer-end] / 1fr 1fr 1fr 1fr /* 각 column의 크기 지정*/
+    /* naming을 사용할 수 있다.*/;
 }
 
 .header {
   background-color: yellow;
-  grid-column: span 4; /* cell의 갯수 */
+  grid-area: header;
 }
 .content {
   background-color: teal;
-  grid-column: 1 / -2;
-  grid-row: span 2;
+  grid-area: content;
 }
 .nav {
   background-color: violet;
-  grid-row: span 2;
+  grid-area: nav;
 }
 .footer {
   background-color: tomato;
-  grid-column: span 4;
+  grid-area: footer;
 }
