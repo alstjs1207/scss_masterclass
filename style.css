@@ -43,30 +43,32 @@
 
 .grid {
   display: grid;
+  gap: 10px;
   /* grid-template-columns: 250px 250px 250px 250px; columns */
-  grid-template-columns: 100px repeat(2, 200px) 100px;
+  grid-template-columns: repeat(4, 100px);
   /* grid-template-rows: 250px 250px 250px 250px; rows */
-  grid-template-rows: 100px repeat(2, 200px) 100px; /* rows */
-  grid-template-areas:
-    "header header header header "
-    "content content . nav" /* 공백도 가능하다 */
-    "content content . nav"
-    "footer footer footer footer";
+  grid-template-rows: repeat(4, 100px); /* rows */
 }
 
 .header {
   background-color: yellow;
-  grid-area: header; /* template가 알수있도록 이름을 설정 */
+  grid-column-start: 1;
+  grid-column-end: 5;
 }
 .content {
   background-color: teal;
-  grid-area: content; /* template가 알수있도록 이름을 설정 */
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
 }
 .nav {
   background-color: violet;
-  grid-area: nav; /* template가 알수있도록 이름을 설정 */
+  grid-row-start: 2;
+  grid-row-end: 4;
 }
 .footer {
   background-color: tomato;
-  grid-area: footer; /* template가 알수있도록 이름을 설정 */
+  grid-column-start: 1;
+  grid-column-end: 5;
 }
