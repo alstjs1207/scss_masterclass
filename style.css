@@ -52,18 +52,18 @@
 
 .header {
   background-color: yellow;
-  grid-column: 1 / -1; /* start / end (= -1) */
+  grid-column: span 4; /* cell의 갯수 */
 }
 .content {
   background-color: teal;
   grid-column: 1 / -2;
-  grid-row: 2 / -2;
+  grid-row: span 2;
 }
 .nav {
   background-color: violet;
-  grid-row: 2 / -2; /* end에서 -1번 까지 */
+  grid-row: span 2;
 }
 .footer {
   background-color: tomato;
-  grid-column: 1 / -1;
+  grid-column: span 4;
 }
