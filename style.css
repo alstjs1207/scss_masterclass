@@ -43,19 +43,30 @@
 
 .grid {
   display: grid;
-  grid-template-columns: 250px 250px 250px 250px; /* columns */
-  grid-template-rows: 250px 250px 250px 250px; /* rows */
+  /* grid-template-columns: 250px 250px 250px 250px; columns */
+  grid-template-columns: 100px repeat(2, 200px) 100px;
+  /* grid-template-rows: 250px 250px 250px 250px; rows */
+  grid-template-rows: 100px repeat(2, 200px) 100px; /* rows */
+  grid-template-areas:
+    "header header header header "
+    "content content . nav" /* 공백도 가능하다 */
+    "content content . nav"
+    "footer footer footer footer";
 }
 
 .header {
   background-color: yellow;
+  grid-area: header; /* template가 알수있도록 이름을 설정 */
 }
 .content {
   background-color: teal;
+  grid-area: content; /* template가 알수있도록 이름을 설정 */
 }
 .nav {
   background-color: violet;
+  grid-area: nav; /* template가 알수있도록 이름을 설정 */
 }
 .footer {
   background-color: tomato;
+  grid-area: footer; /* template가 알수있도록 이름을 설정 */
 }
