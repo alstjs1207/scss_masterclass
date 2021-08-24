@@ -52,18 +52,18 @@
 
 .header {
   background-color: yellow;
-  grid-column: 1 / 5; /* start / end */
+  grid-column: 1 / -1; /* start / end (= -1) */
 }
 .content {
   background-color: teal;
-  grid-column: 1 / 4;
-  grid-row: 2 / 4;
+  grid-column: 1 / -2;
+  grid-row: 2 / -2;
 }
 .nav {
   background-color: violet;
-  grid-row: 2 / 4;
+  grid-row: 2 / -2; /* end에서 -1번 까지 */
 }
 .footer {
   background-color: tomato;
-  grid-column: 1 / 5;
+  grid-column: 1 / -1;
 }
