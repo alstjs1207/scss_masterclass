@@ -1,18 +1,16 @@
 .grid {
   display: grid; /* gird는 높이가 없다 */
   gap: 10px;
-  height: 50vh;
-  grid-template-columns: repeat(4, 1fr);
+  height: 150vh;
+  grid-template-columns: repeat(4, 100px);
   grid-template-rows: repeat(4, 1fr);
-  /* 수평  |start  |center  |end */
-  /* justify-items: start; */
-  /* align-items: end; */
-  /* 수직 
-  - start
-  - center
-  - end
-  */
-  place-items: end start; /* <'align-items'> <'justify-items'> */
+  /* grid 전체를 움직인다. */
+  /* 수직의 움직임 */
+  /* align-content: stretch; */
+  /* 수평의 움직임 */
+  /* justify-content: end; */
+  /* place-content: <'align-content'> <'justify-content'> */
+  place-content: stretch end;
 }
 
 .header {
