@@ -2,27 +2,28 @@
   display: grid; /* gird는 높이가 없다 */
   gap: 10px;
   height: 50vh;
-  grid-template:
-    /* fraction 사용 가능한 공간 */
-    [header-start] "header header header header" 1fr [header-end] /* 높이를 1fr로 설정 */
-    [content-start] "content content content nav" 2fr [content-end]
-    [footer-start] "footer footer footer footer" 1fr [footer-end] / 1fr 1fr 1fr 1fr /* 각 column의 크기 지정*/
-    /* naming을 사용할 수 있다.*/;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  /* 수평  |start  |center  |end */
+  /* justify-items: start; */
+  /* align-items: end; */
+  /* 수직 
+  - start
+  - center
+  - end
+  */
+  place-items: end start; /* <'align-items'> <'justify-items'> */
 }
 
 .header {
   background-color: yellow;
-  grid-area: header;
 }
 .content {
   background-color: teal;
-  grid-area: content;
 }
 .nav {
   background-color: violet;
-  grid-area: nav;
 }
 .footer {
   background-color: tomato;
-  grid-area: footer;
 }
