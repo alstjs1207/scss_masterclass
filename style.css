@@ -2,7 +2,8 @@
   display: grid; /* gird는 높이가 없다 */
   color: white;
   gap: 10px;
-  grid-template-columns: repeat(4, 100px);
+  /* 최대 1fr로 하되 최소 100px 유지 */
+  grid-template-columns: repeat(5, minmax(100px, 1fr));
   grid-template-rows: repeat(4, 100px);
   /* 얼마나 많은 rows가 있는지 모르기 때문에 자동으로 사이즈를 맞춘다.*/
   /* grid-auto-rows: 100px; */
