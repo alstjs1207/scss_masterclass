@@ -45,7 +45,7 @@
 
 - [x] repeat
 - [x] fr
-- [ ] minmax
+- [x] minmax
 - [ ] min-content
 - [ ] max-content
 - [ ] auto-fit
