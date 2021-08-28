@@ -2,6 +2,7 @@
   color: white;
   display: grid;
   gap: 5px;
+  grid-template-columns: max-content min-content;
   grid-auto-rows: 100px;
   margin-bottom: 30px;
 }
@@ -12,13 +13,4 @@
 
 .item:nth-child(even) {
   background-color: cadetblue;
-}
-
-.grid:first-child {
-  /*column이 있는 만큼 가능한한 많이 채움 */
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-}
-
-.gird:last-child {
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
