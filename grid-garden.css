@@ -1,5 +1,5 @@
 .water {
-  grid-column-start: 1;
-  grid-column-end: span 5;
+  grid-column-start: span 3;
+  grid-column-end: 6;
   /* span은 양수만 설정 가능하다.*/
 }
