@@ -1,3 +1,4 @@
 .water {
-  grid-column-start: 5;
+  grid-column-start: 1;
+  grid-column-end: 4;
 }
