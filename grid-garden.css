@@ -1,3 +1,5 @@
-.poison {
-  grid-column-start: -3;
+.water {
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  /* span은 양수만 설정 가능하다.*/
 }
