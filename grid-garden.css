@@ -1,4 +1,4 @@
 .water {
-  grid-column: 4 / 6;
+  grid-column: 2 / span 3;
   /* start,end 를 한번에 입력 */
 }
