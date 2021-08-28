@@ -2,7 +2,7 @@
   color: white;
   display: grid;
   gap: 5px;
-  grid-template-columns: max-content min-content;
+  grid-template-columns: repeat(auto-fit, minmax(100px, max-content));
   grid-auto-rows: 100px;
   margin-bottom: 30px;
 }
