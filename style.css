@@ -1,22 +1,9 @@
 .grid {
-  display: grid; /* gird는 높이가 없다 */
   color: white;
-  gap: 10px;
-  /* 최대 1fr로 하되 최소 100px 유지 */
-  grid-template-columns: repeat(5, minmax(100px, 1fr));
-  grid-template-rows: repeat(4, 100px);
-  /* 얼마나 많은 rows가 있는지 모르기 때문에 자동으로 사이즈를 맞춘다.*/
-  /* grid-auto-rows: 100px; */
-  /*
-  방향이 전환된다.
-   1 5
-   2 6
-   3 7
-   4 8
-  */
-  grid-auto-flow: column; /* 수직 */
-  /* grid-auto-flow: row; 수평 */
-  grid-auto-columns: 100px;
+  display: grid;
+  gap: 5px;
+  grid-auto-rows: 100px;
+  margin-bottom: 30px;
 }
 
 .item:nth-child(odd) {
@@ -25,4 +12,13 @@
 
 .item:nth-child(even) {
   background-color: cadetblue;
+}
+
+.grid:first-child {
+  /*column이 있는 만큼 가능한한 많이 채움 */
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.gird:last-child {
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
