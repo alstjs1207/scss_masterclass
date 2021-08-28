@@ -1,5 +1,3 @@
-.water {
-  grid-column-start: 1;
-  grid-column-end: -2;
-  /* 오른쪽 맨 끝은 -1 이다.*/
+.poison {
+  grid-column-start: -3;
 }
