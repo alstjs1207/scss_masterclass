@@ -61,5 +61,5 @@
 - [ ] Responsive
 
 ## EX:
-- [ ] https://flexboxfroggy.com/#ko
-- [ ] http://cssgridgarden.com/#ko
+- [x] https://flexboxfroggy.com/#ko
+- [x] http://cssgridgarden.com/#ko
