@@ -1,4 +1,4 @@
 .garden {
-  grid-template-columns: 50%;
-  /* grid 열의 크기와 명칭을 지정 */
+  grid-template-columns: repeat(8, 12.5%);
+  /* repeat 반복 */
 }
