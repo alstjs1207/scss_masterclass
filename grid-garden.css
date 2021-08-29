@@ -1,4 +1,4 @@
-.poison {
-  order: -1;
-  /* grid 요소의 순서를 지정 */
+.garden {
+  grid-template-columns: 50%;
+  /* grid 열의 크기와 명칭을 지정 */
 }
