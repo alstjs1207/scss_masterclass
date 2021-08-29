@@ -1,4 +1,4 @@
-.water-2 {
-  grid-area: 2 / 3 / 5 / 6;
-  /* grid-row-start / grid-column-start / grid-row-end / grid-column-end */
+.poison {
+  order: 4;
+  /* grid 요소의 순서를 지정 */
 }
