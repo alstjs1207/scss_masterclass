@@ -1,4 +1,3 @@
 .water {
-  grid-column: 2 / span 4;
-  grid-row: span 5;
+  grid-area: 1 / 2 / 4 / 6;
 }
