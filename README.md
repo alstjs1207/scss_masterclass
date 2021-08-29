@@ -58,8 +58,9 @@
 - [ ] Partials
 - [ ] Mixins
 - [ ] Extend
-- [ ] Responsive
+- [ ] Responsive Mixins
 
 ## EX:
+
 - [x] https://flexboxfroggy.com/#ko
 - [x] http://cssgridgarden.com/#ko
