@@ -1,3 +1,4 @@
 .garden {
-  grid-template-columns: 50px 1fr 1fr 1fr 50px;
+  grid-template-columns: 75px 3fr 2fr;
+  /* 75px 3/5 2/5 */
 }
