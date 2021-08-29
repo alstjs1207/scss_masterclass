@@ -1,4 +1,4 @@
 .garden {
-  grid-template-columns: 100px 3em 40%;
-  /* repeat 반복 */
+  grid-template-columns: 1fr 5fr;
+  /* fr(fractional) 사용가능한 공간을 하나로 공유하여 할당 */
 }
