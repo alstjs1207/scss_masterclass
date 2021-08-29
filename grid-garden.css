@@ -1,3 +1,4 @@
-.water {
-  grid-area: 1 / 2 / 4 / 6;
+.water-2 {
+  grid-area: 2 / 3 / 5 / 6;
+  /* grid-row-start / grid-column-start / grid-row-end / grid-column-end */
 }
