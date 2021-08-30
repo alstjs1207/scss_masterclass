@@ -1,7 +1,10 @@
+@import "_variables";
+
 body {
   //여기서 변경하면 dist/css/styles.css가 실시간으로 변경된다.
-  background: blue;
+  background: $bg;
   a {
     color: blue;
+    font-size: $title;
   }
 }
