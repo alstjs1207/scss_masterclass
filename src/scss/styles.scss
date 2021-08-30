@@ -1,20 +1,13 @@
 @import "_variables";
+@import "_mixins";
 
-body {
-  //여기서 변경하면 dist/css/styles.css가 실시간으로 변경된다.
-  background: $bg;
-  a {
-    color: blue;
-    font-size: $title;
+a {
+  margin-bottom: 10px;
+  &:nth-child(odd) {
+    @include link("odd");
   }
-}
 
-.box {
-  margin-top: 20px;
-  h2 {
-    color: blue;
-  }
-  button {
-    color: red;
+  &:nth-child(even) {
+    @include link("even");
   }
 }

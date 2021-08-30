@@ -1,1 +1,1 @@
-body{background:red}body a{font-size:32px}.box{margin-top:20px}.box h2,body a{color:#00f}.box button{color:red}
+a{margin-bottom:10px}a:nth-child(even),a:nth-child(odd){text-decoration:none;display:block;color:#00f}a:nth-child(even){color:red}
