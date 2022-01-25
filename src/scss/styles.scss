@@ -1,9 +1,23 @@
+@import "_variables";
 @import "reset";
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   height: 100vh;
+  font-family: Univers, Helvetica Neue, Helvetica, Myriad Pro, Myriad, Geneva,
+    Arial, sans-serif;
 }
 header {
-  background-color: brown;
+  background-color: $white;
   width: 33%;
   height: 100%;
+  padding: 75px;
+  h1 {
+    color: $red;
+    font-size: 85px;
+    width: 50%;
+  }
 }
