@@ -14,10 +14,28 @@ header {
   background-color: $white;
   width: 33%;
   height: 100%;
-  padding: 75px;
+  padding: 10vh 72px 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: $red;
   h1 {
-    color: $red;
     font-size: 85px;
     width: 50%;
+  }
+  h3 {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+  h3,
+  p {
+    width: 80%;
+    text-align: justify;
+  }
+  p {
+    font-weight: 300;
+    font-size: 22px;
+    margin-bottom: 40px;
   }
 }
