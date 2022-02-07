@@ -9,10 +9,13 @@ body {
   height: 100vh;
   font-family: Univers, Helvetica Neue, Helvetica, Myriad Pro, Myriad, Geneva,
     Arial, sans-serif;
+  background-color: $white;
 }
 header {
-  background-color: $white;
-  width: 33%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: $fixedWidth;
   height: 100%;
   padding: 10vh 72px 72px;
   display: flex;
@@ -22,15 +25,18 @@ header {
   h1 {
     font-size: 85px;
     width: 50%;
+    text-transform: uppercase;
+    letter-spacing: 5px;
   }
   h3 {
     font-size: 30px;
     font-weight: 300;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
   h3,
   p {
-    width: 80%;
+    width: 70%;
+    line-height: 1.2;
     text-align: justify;
   }
   p {
@@ -38,4 +44,30 @@ header {
     font-size: 22px;
     margin-bottom: 40px;
   }
+  nav {
+    width: 80%;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        cursor: pointer;
+        margin-right: 12px;
+        font-size: 20px;
+        color: black;
+        opacity: 0.5;
+        padding-bottom: 5px;
+        border-bottom: 2px solid rgba($color: #000000, $alpha: 1);
+        margin-bottom: 20px;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+main {
+  height: 5000vh;
+  background-color: red;
+  margin-left: $fixedWidth;
 }
